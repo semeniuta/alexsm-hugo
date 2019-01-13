@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Configuring jumbo frames in Ubuntu"
+title: Configuring jumbo frames in Ubuntu
 comments: true
 permalink: ubuntu-jumbo-frames
+date: "2017-10-28"
 ---
 
 When working with GigE Vision cameras, it is important to be able to receive Ethernet frames of larger sizes than one gets in the default configuration. In particular, the default value of Maximum Transmission Unit (MTU) is 1500 bytes. By setting this parameter to the maximum (9000 bytes), a video streaming application handles smaller number of frames per second. This results in a decreased CPU load by cutting the number of operations for reconstructing image data from multiple small Ethernet frames.

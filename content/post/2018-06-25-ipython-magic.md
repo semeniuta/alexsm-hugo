@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "My favorite IPython Magic commands"
+title: My favorite IPython Magic commands
 comments: true
-permalink: jupyter-notebook-ipython-magic
+slug: jupyter-notebook-ipython-magic
+date: "2018-06-25"
+tags: [python, jupyter, datascience]
 ---
 
 [Jupyter Notebook](http://jupyter.org/) is a great tool for data science prototyping, visualization and sharing. The first code cell of every notebook I work on contains the following commands:  

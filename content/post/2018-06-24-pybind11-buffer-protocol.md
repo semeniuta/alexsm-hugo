@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "Exposing C++ array data in Python with the Pybind11 buffer protocol"
+title: Exposing C++ array data in Python with the Pybind11 buffer protocol
 comments: true
-permalink: pybind11-buffer-protocol-opencv-to-numpy
+slug: pybind11-buffer-protocol-opencv-to-numpy
+date: "2018-06-24"
+tags: [c++, pybind11, python]
 ---
 
 Python works great together with native code. The success of the Python data science stack is largely attributed to the capability of building native extensions. It is no secret, however, that the out-of-the-box C-based facilities are rather cumbersome to use. Luckily, there are a bunch of alternatives out there. The one I liked the most is [Pybind11](http://pybind11.readthedocs.io/), a fork of Boost.Python with focus on the modern C++ standards. It is distributed as a lightweight header-only library that can be bundled with your project.

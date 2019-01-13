@@ -1,0 +1,28 @@
+baseURL = "http://alexsm.com/"
+languageCode = "en-us"
+title = "alexsm"
+theme = "mainroad"
+disqusShortname = "alexsm"
+
+[permalinks]
+  post = "/:slug/"
+
+[Params]
+  subtitle = "A blog by Oleksandr Semeniuta" 
+  #description = "John Doe's Personal blog about everything" # Site description. Used in meta description
+  copyright = "Oleksandr Semeniuta"
+
+[Params.sidebar]
+  home = "right"
+  widgets = ["taglist", "recent", "social"]
+  single = true
+
+[Params.widgets.social]
+  github = "semeniuta"
+  linkedin = "semeniuta"
+  twitter = "OSemeniuta"
+  instagram = "oleksandr_s"
+  
+  
+
+
