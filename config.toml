@@ -9,7 +9,7 @@ disqusShortname = "alexsm"
 
 [Params]
   subtitle = "A blog by Oleksandr Semeniuta" 
-  #description = "John Doe's Personal blog about everything" # Site description. Used in meta description
+  description = "Technical blog by Oleksandr Semeniuta: C++, Python, Linux, macOS, programming, build tutorials" 
   copyright = "Oleksandr Semeniuta"
 
 [Params.sidebar]
