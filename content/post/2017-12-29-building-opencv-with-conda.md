@@ -4,7 +4,7 @@ title: Buidling OpenCV with Conda on Linux
 comments: true
 slug: building-opencv-with-conda
 date: "2017-12-29"
-tags: [opencv, cmake, conda, python]
+tags: [opencv, cmake, conda, python, linux]
 ---
 
 When it comes to building and installing OpenCV with Python support on \*nix platforms, the collection of [tutorials by Adrian Rosebrock](https://www.pyimagesearch.com/opencv-tutorials-resources-guides/) is the best. He provides detailed description of the required steps, as well as motivation for better development practices. In particular, Adrian creates a dedicated `virtualenv` environment, installs NumPy in it, and builds the whole thing having this environment activated.

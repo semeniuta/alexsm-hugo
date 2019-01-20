@@ -3,6 +3,7 @@ layout: post
 title: Configuring jumbo frames in Ubuntu
 comments: true
 permalink: ubuntu-jumbo-frames
+tags: [linux, ubuntu, networking, computervision, gigevision]
 date: "2017-10-28"
 ---
 
