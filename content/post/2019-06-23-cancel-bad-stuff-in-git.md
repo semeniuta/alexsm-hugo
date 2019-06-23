@@ -3,7 +3,7 @@ layout: post
 title: Cancelling bad stuff in Git
 comments: true
 slug: cancel-bad-stuff-in-git
-date: "2019-03-05"
+date: "2019-06-23"
 tags: [git, programming]
 ---
 
