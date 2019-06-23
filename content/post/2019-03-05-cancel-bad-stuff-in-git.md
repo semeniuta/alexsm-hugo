@@ -28,3 +28,7 @@ git reset --soft HEAD~1
 
 The option `--soft` here is very important, as it leaves all the files in the working directory unchanged (that's what you need). Note that after this command the previosly staged files remain staged. 
 
+
+## Further reading
+
+https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified  
