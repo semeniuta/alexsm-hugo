@@ -19,9 +19,15 @@ T b = std::move(a);
 T b = static_cast<T&&>(a);
 ```
 
-The snippet above represent a *move assignment*, during which the internal representation of `a` is transferred to `b`, and `a` is remained in a moved-from state (loosely speaking, empty).
+The snippet above represent a *move assignment*, during which the internal representation of `a` is transferred to `b`, and `a` is remained in a moved-from state (loosely speaking, empty). Similarly, the following code performs *move initialization*, which effectively results in the same states of `a` and `b` as after the move assignment:
 
-The most typical application of rvalue refences is in the move constructor and the move assignment of a class. For a class `X`, the following methods are provided by default:
+```cpp
+T b{std::move(a)};
+```
+
+Internally, this is achieved through move assingment and move constructor of class `T` respectively. 
+
+For a class `X`, the following methods are provided by default:
 
 ```cpp
 
@@ -36,9 +42,17 @@ X& operator=(X&&)      // move assignment
 ~X();                  // destructor
 ```
 
-Usage examples 
+Let's say you are writing a custom vector class (let's call it `MyVec`), which internally allocates and grows an array on heap. If the user of `MyVec` requests the regular copy operations when creating a new object from the existing one, all the data should be copied under the hood. Obviously, this may be a rather costly process if there is a lot of data in the container. 
 
+```cpp
+MyVec b{a}; // copy construction; a is the existing MyVec
+```
 
+Conversely if the existing object is of no interest, the user creates the new one using the move constructor or assignment. In this case, the internal pointer to the array on heap gets transferred to the new object, leaving the original one in the moved-from state, speficially setting the pointer to the data in it to `nullptr`. 
+
+```cpp
+MyVec b{std::move(a)}; // move construction
+```
 
 See also:
 
