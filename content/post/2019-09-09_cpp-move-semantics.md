@@ -32,7 +32,10 @@ For a class `X`, the following methods are provided by default:
 ```cpp
 
 X();                   // default constructor
-
+                       // ^ not generated if any other 
+                       //   constructor is declared
+    
+                       // -------------------------------
 X(const X&);           // copy constructor
 X& operator=(const X&) // copy assignment
 
@@ -40,23 +43,60 @@ X(X&&);                // move constructor
 X& operator=(X&&)      // move assignment
 
 ~X();                  // destructor
+                       // -------------------------------
+                       // ^ if any of those is declared, 
+                       //   no default generation happens 
+                       //   for the rest
+
 ```
 
 Let's say you are writing a custom vector class (let's call it `MyVec`), which internally allocates and grows an array on heap. If the user of `MyVec` requests the regular copy operations when creating a new object from the existing one, all the data should be copied under the hood. Obviously, this may be a rather costly process if there is a lot of data in the container. 
 
 ```cpp
-MyVec b{a}; // copy construction; a is the existing MyVec
+MyVec<int> b{a}; // copy construction; a is the existing MyVec
 ```
 
 Conversely if the existing object is of no interest, the user creates the new one using the move constructor or assignment. In this case, the internal pointer to the array on heap gets transferred to the new object, leaving the original one in the moved-from state, speficially setting the pointer to the data in it to `nullptr`. 
 
 ```cpp
-MyVec b{std::move(a)}; // move construction
+MyVec<int> b{std::move(a)}; // move construction
 ```
 
-TODO Write about return 
+As such, move constructor and assignment take rvalue references and leave the original objects empty (so that they can be destructed when going out of scope). An important application of this behavior happens on **return**: when a function returns an object, its move constructor is used. In the example below, the original object `a` shall in this case go out of scope and gets destructed, but its internal representation is moved to the object `b` on the calling side. 
+
+```cpp
+MyVec<int> f() {
+
+    MyVec<int> a;
+    
+    // ...
+
+    return a;
+
+}
+
+int main() {
+
+    // ...
+
+    MyVec<int> b = f();
+
+    // ...
+}
+
+```
+
+In my [`demo_cpp`](https://github.com/semeniuta/demo_cpp) Github repo, I have created the following examples illustrating move semantics:
+
+ * https://github.com/semeniuta/demo_cpp/blob/master/src/myvec.h
+ * https://github.com/semeniuta/demo_cpp/blob/master/src/demo_cpmv.cpp 
+ * https://github.com/semeniuta/demo_cpp/blob/master/src/demo_cpmv.cpp
+
 
 See also:
+
+Bjarne Stroustrup's *The C++ Programming Language* (4th edition): sections 3.3, 7.7.2, 17.5.2.
+
 
 https://www.internalpointers.com/post/c-rvalue-references-and-move-semantics-beginners
 
