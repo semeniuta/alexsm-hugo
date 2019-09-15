@@ -7,7 +7,7 @@ date: "2019-09-09"
 tags: [c++, programming]
 ---
 
-In the modern versions of C++ (strarting from C++11) one encounters a concept of *move semantics*. It may confusing a bit, and in this post I am going to provide a succint overview of the topic.
+In the modern versions of C++ (starting from C++11) one encounters a concept of *move semantics*. It may confusing a bit, and in this post I am going to provide a succint overview of the topic.
 
 The first important concept is *rvalue reference*. For a type `T`, a rvalue reference is `T&&` (note the double ampresand). It basically represents a reference to a temporary object that is assumed to be modified and not used again. 
 
@@ -25,7 +25,7 @@ The snippet above represent a *move assignment*, during which the internal repre
 T b{std::move(a)};
 ```
 
-Internally, this is achieved through move assingment and move constructor of class `T` respectively. 
+In both cases, the logic that performs "moving" and leaving the original object as "moved from", is supplied by the author of type `T`. Specifically, this is achieved through move assingment and move constructor of `T` respectively. 
 
 For a class `X`, the following methods are provided by default:
 
@@ -53,6 +53,8 @@ Conversely if the existing object is of no interest, the user creates the new on
 ```cpp
 MyVec b{std::move(a)}; // move construction
 ```
+
+TODO Write about return 
 
 See also:
 
