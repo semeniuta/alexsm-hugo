@@ -14,7 +14,7 @@ disqusShortname = "alexsm"
 
 [Params.sidebar]
   home = "right"
-  widgets = ["taglist", "recent", "social"]
+  widgets = ["feed", "taglist", "recent", "social"]
   single = true
 
 [Params.widgets.social]
