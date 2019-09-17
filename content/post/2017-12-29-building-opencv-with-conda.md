@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Buidling OpenCV with Conda on Linux
+title: Building OpenCV with Conda on Linux
 comments: true
 slug: building-opencv-with-conda
 date: "2017-12-29"
