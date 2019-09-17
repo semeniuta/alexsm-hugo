@@ -3,11 +3,11 @@ layout: post
 title: C++ move semantics
 comments: true
 slug: cpp-move-semantics
-date: "2019-09-09"
+date: "2019-09-17"
 tags: [c++, programming]
 ---
 
-In the modern versions of C++ (starting from C++11) one encounters a concept of *move semantics*. It may confusing a bit, and in this post I am going to provide a succint overview of the topic.
+In the modern versions of C++ (starting from C++11) one encounters a concept of *move semantics*. It may confusing a bit, and in this post I am going to provide my notes on the topic (mostly based on Bjarne Stroustrup's *The C++ Programming Language* (4th edition): sections 3.3, 7.7.2, 17.5.2).
 
 The first important concept is *rvalue reference*. For a type `T`, a rvalue reference is `T&&` (note the double ampresand). It basically represents a reference to a temporary object that is assumed to be modified and not used again. 
 
@@ -19,7 +19,7 @@ T b = std::move(a);
 T b = static_cast<T&&>(a);
 ```
 
-The snippet above represent a *move assignment*, during which the internal representation of `a` is transferred to `b`, and `a` is remained in a moved-from state (loosely speaking, empty). Similarly, the following code performs *move initialization*, which effectively results in the same states of `a` and `b` as after the move assignment:
+The snippet above represent a *move assignment*, during which the internal representation of `a` is transferred to `b`, and `a` is remained in a **moved-from state** (loosely speaking, empty). Similarly, the following code performs *move initialization*, which effectively results in the same states of `a` and `b` as after the move assignment:
 
 ```cpp
 T b{std::move(a)};
@@ -88,16 +88,11 @@ int main() {
 
 In my [`demo_cpp`](https://github.com/semeniuta/demo_cpp) Github repo, I have created the following examples illustrating move semantics:
 
- * https://github.com/semeniuta/demo_cpp/blob/master/src/myvec.h
- * https://github.com/semeniuta/demo_cpp/blob/master/src/demo_cpmv.cpp 
- * https://github.com/semeniuta/demo_cpp/blob/master/src/demo_cpmv.cpp
-
+ * [`myvec.h`](https://github.com/semeniuta/demo_cpp/blob/master/src/myvec.h): Implementation of `MyVec` class with diagnostic output functionality.
+ * [`demo_cpmv.cpp`](https://github.com/semeniuta/demo_cpp/blob/master/src/demo_cpmv.cpp): Demonstration of copy and move operations based on the `MyVec` class.
+ * [`demo_rvalue.cpp`](https://github.com/semeniuta/demo_cpp/blob/master/src/demo_rvalue.cpp): Demonstration of explicit calls of `std::move` for different data types. 
 
 See also:
 
-Bjarne Stroustrup's *The C++ Programming Language* (4th edition): sections 3.3, 7.7.2, 17.5.2.
-
-
-https://www.internalpointers.com/post/c-rvalue-references-and-move-semantics-beginners
-
-https://mbevin.wordpress.com/2012/11/20/move-semantics/
+* [C++ rvalue references and move semantics for beginners](https://www.internalpointers.com/post/c-rvalue-references-and-move-semantics-beginners)
+* [Move semantics @ Mike's C++11 Blog](https://mbevin.wordpress.com/2012/11/20/move-semantics/)
