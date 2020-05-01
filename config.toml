@@ -12,6 +12,7 @@ disqusShortname = "alexsm"
   description = "Technical blog by Oleksandr Semeniuta: C++, Python, Linux, macOS, programming, build tutorials" 
   copyright = "Oleksandr Semeniuta"
   post_meta = ["date"]
+  readmore = true
 
 [Params.sidebar]
   home = "right"
