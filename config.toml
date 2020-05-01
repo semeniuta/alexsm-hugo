@@ -11,6 +11,7 @@ disqusShortname = "alexsm"
   subtitle = "A blog by Oleksandr Semeniuta" 
   description = "Technical blog by Oleksandr Semeniuta: C++, Python, Linux, macOS, programming, build tutorials" 
   copyright = "Oleksandr Semeniuta"
+  post_meta = ["date"]
   menu = ["main", "sidebar"]
 
 [Params.sidebar]
