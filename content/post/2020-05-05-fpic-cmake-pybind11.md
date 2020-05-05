@@ -2,7 +2,7 @@
 layout: post
 title: Position independent code
 comments: true
-slug: fpic-cmake
+slug: fpic-cmake-pybind11
 date: "2020-05-05"
 tags: [c++, programming, cmake, pybind11, python]
 ---
