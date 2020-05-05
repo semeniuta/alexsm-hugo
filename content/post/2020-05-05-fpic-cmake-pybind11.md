@@ -16,11 +16,14 @@ The linker option `-fPIC` turns out to signify position independent code, a type
 When doing compilation directly via GCC, position independent code is specified as follows
 
 ```bash
-gcc -g -c -fPIC -Wall module1.c module2.c
-gcc -g -shared -o libmylibrary.so module1.o module2.o
+# compilation
+$ gcc -g -c -fPIC -Wall module1.c module2.c
+
+#linking
+$ gcc -g -shared -o libmylibrary.so module1.o module2.o
 ```
 
-What I was building was in fact a static library, which was subsequently linked with the Python extension. However, because my project would not compile due to inclusion of a pydind11 module, I went on to figure out how to enable position independent code in my workflow (CMake). In short, the equivalent CMake specification of `-fPIC` option is done as follows:
+What I was building was in fact a static library, which was subsequently linked with the Python extension. However, because my project would not compile due to inclusion of a pydind11 module, I went on to figure out how to enable position independent code in my workflow (CMake). In short, the equivalent CMake specification of the `-fPIC` option is done as follows:
 
 ```cmake
 set_target_properties(mylibrary PROPERTIES POSITION_INDEPENDENT_CODE ON)
