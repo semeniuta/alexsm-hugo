@@ -4,7 +4,7 @@ title: Optimization with Python
 comments: true
 slug: optimization-with-python
 date: "2021-04-11"
-tags: [python, optimization]
+tags: [python, optimization, datascience]
 ---
 
 Mathematical optimization is a pervasive task in numerous engineering applications. It is concerned with algorithmic search for a value (usually a vector) that minimizes or maximizes a predefined objective function. In machine learning (ML), for instance, a search for the best configuration of model parameters is performed with an optimization algorithm minimizing the objective function that measures misfit between the known response values and those predicted by the ML model. 
