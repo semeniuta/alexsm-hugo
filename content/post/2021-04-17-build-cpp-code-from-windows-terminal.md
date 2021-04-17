@@ -21,7 +21,24 @@ Start ->
                 x64 Native Tools Command Prompt for VS 2019
 ```
 
-TODO.
+It will enable the good old `cmd.exe` with enabled set of the necessary environment variables and access to the compiler/linker executable `cl.exe`. It can be further invoked as follows (imagine we are in the `build` directory, which is on the same level as `src` and `include`):
+
+```
+cl ..\src\app.cpp ..\src\library.cpp /I ..\include
+```
+
+Here we are providing a list of source files to compile and link, along with the directory when headers are located (following the `/I` option). This example command will generate two object files per each C++ source (`app.obj`, `library.obj`), along with one executable (`app.exe`) corresponding to the source file containing the `main` entry point (`app.cpp`).
+
+How to activate the compiler command prompt from a script rather than by pointing and clicking? If you look at the details of the mentioned start menu shortcut, it points to a batch script `vcvars64.bat` that does all the work setting up the environment. We can invoke this script from our own batch script as follows:
+
+```bat
+if not defined DevEnvDir (
+    call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars64.bat"
+)
+```
+
+The `if`-block, checking whether one of the required environment variables has been defined, is important in case your scipt would be invoked more than once. 
+
 
 
 
