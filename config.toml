@@ -1,6 +1,6 @@
 baseURL = "http://alexsm.com/"
 languageCode = "en-us"
-title = "alexsm"
+title = "Oleksandr Semeniuta"
 theme = "mainroad"
 disqusShortname = "alexsm"
 
@@ -8,12 +8,11 @@ disqusShortname = "alexsm"
   post = "/:slug/"
 
 [Params]
-  subtitle = "A blog by Oleksandr Semeniuta" 
+  subtitle = "A technical blog" 
   description = "Technical blog by Oleksandr Semeniuta: C++, Python, Linux, macOS, programming, build tutorials" 
   copyright = "Oleksandr Semeniuta"
   post_meta = ["date"]
   menu = ["main", "sidebar"]
-  #highlightColor = "#05386b"
 
 [Params.sidebar]
   home = "right"
