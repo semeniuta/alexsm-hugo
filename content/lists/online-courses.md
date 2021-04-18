@@ -1,7 +1,7 @@
 ---
 title: List of recommended online courses
 comments: false
-slug: courses-list
+slug: online-courses
 menu: side
 ---
 
