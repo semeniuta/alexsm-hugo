@@ -13,6 +13,7 @@ disqusShortname = "alexsm"
   copyright = "Oleksandr Semeniuta"
   post_meta = ["date"]
   menu = ["main", "sidebar"]
+  readmore = true
 
 [Params.sidebar]
   home = "right"
