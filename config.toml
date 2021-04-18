@@ -17,7 +17,7 @@ disqusShortname = "alexsm"
 
 [Params.sidebar]
   home = "right"
-  widgets = ["feed", "sidemenu", "taglist", "recent", "social"]
+  widgets = ["feed", "taglist", "sidemenu", "recent", "social"]
   single = true
 
 [Params.widgets.social]
@@ -25,7 +25,3 @@ disqusShortname = "alexsm"
   linkedin = "semeniuta"
   twitter = "OSemeniuta"
   instagram = "oleksandr_s"
-  
-  
-
-
