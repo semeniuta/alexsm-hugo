@@ -7,7 +7,7 @@ date: "2021-04-24"
 tags: [c++, programming]
 ---
 
-In this post I am going to show how to efficiently search for the closest element in sorted `std::vector` using the `std::lower_bound` function from the Stabdard Template Library (STL). 
+In this post I am going to show how to efficiently search for the closest element in sorted `std::vector` using the `std::lower_bound` function from the Standard Template Library (STL). 
 
 The problem is a follows: you have a bunch of numbers (e.g. `double`s) that you have stored in a `std::vector`, which you have subsequently sorted, and you want to, given a new number `x`, find the element in the sorted vector that is the closest to `x`. This problem sounds very similar to binary search, although the goal here is not to find exacly the same value as `x`, but to report on the value having the lowest difference with `x`.
 
