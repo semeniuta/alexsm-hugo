@@ -1,27 +1,16 @@
 baseURL = "http://alexsm.com/"
 languageCode = "en-us"
 title = "Oleksandr Semeniuta"
-theme = "mainroad"
+theme = "alexsm-theme"
 disqusShortname = "alexsm"
 
 [permalinks]
   post = "/:slug/"
 
 [Params]
-  subtitle = "A technical blog" 
-  description = "Technical blog by Oleksandr Semeniuta: C++, Python, Linux, macOS, programming, build tutorials" 
+  subtitle = "A technical blog"
   copyright = "Oleksandr Semeniuta"
-  post_meta = ["date"]
-  menu = ["main", "sidebar"]
-  readmore = true
 
-[Params.sidebar]
-  home = "right"
-  widgets = ["feed", "taglist", "sidemenu", "recent", "social"]
-  single = true
-
-[Params.widgets.social]
-  github = "semeniuta"
-  linkedin = "semeniuta"
-  twitter = "OSemeniuta"
-  instagram = "oleksandr_s"
+[markup]
+  [markup.highlight]
+    style = 'monokai'
