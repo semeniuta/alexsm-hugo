@@ -1,3 +1,6 @@
 [submodule "themes/mainroad"]
 	path = themes/mainroad
 	url = https://github.com/vimux/mainroad
+[submodule "themes/alexsm-theme"]
+	path = themes/alexsm-theme
+	url = git@github.com:semeniuta/alexsm-theme.git
