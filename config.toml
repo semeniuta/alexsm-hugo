@@ -10,6 +10,7 @@ disqusShortname = "alexsm"
 [Params]
   subtitle = "A technical blog"
   copyright = "Oleksandr Semeniuta"
+  description = "Technical blog by Oleksandr Semeniuta: C++, Python, Linux, macOS, programming, automation with shell scripts"
 
 [markup]
   [markup.highlight]
