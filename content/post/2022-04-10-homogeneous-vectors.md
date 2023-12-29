@@ -8,6 +8,8 @@ date: "2022-04-10"
 tags: [math, python, numpy]
 ---
 
+*NOTE: updated on December 28, 2023 (fixed some mistakes)*
+
 **Homogeneous coordinates** is an extremely useful system of coordinates origination from the field of projective geometry, and widely used in computer vision and robotics. They allow to represent certain classes of non-linear transformations in linear form, which opens up for some elegant closed-form solutions to various problems. In this blog post I am going to briefly intoroduce the idea and show how homogeneous vectors can be applied for the tasks of finding intersection of two lines at a point and finding a line through two points. This is also my first attempt of preparing a blog post as a Jupyter notebook, which is further converted into Markdown to be a part of a Hugo site.
 
 Let's first import NumPy and Matplotlib.
@@ -149,28 +151,27 @@ We define three points, two of which lie on a vertical line:
 
 
 ```python
-points = np.array([[1, 2], [-3, 1], [1, -1]], dtype=float)
+points = np.array([[2, 2], [-3, 1], [2, -1]], dtype=float)
 
 p1, p2, p3 = points
 ```
 
 
 ```python
-xrange = (-5, 3)
+xrange = (-4, 3)
 yrange = (-2, 3)
 
-helpers.create_canvas(xrange, yrange)
+_, ax = plt.subplots()
+helpers.prepare_canvas(ax, xrange, yrange)
 
 plt.scatter(points[:, 0], points[:, 1], color='black')
 
-plt.xlabel('x')
-plt.ylabel('y')
 plt.show()
 ```
 
 
     
-![png](/homogeneous_vectors_files/homogeneous_vectors_21_0.png)
+![png](/homogeneous-vectors/figure_1.png)
     
 
 
@@ -190,8 +191,8 @@ print(f'line 1: {line1}')
 print(f'line 2: {line2}')
 ```
 
-    line 1: [ 1. -4.  7.]
-    line 2: [ 3.  0. -3.]
+    line 1: [ 1. -5.  8.]
+    line 2: [ 3.  0. -6.]
 
 
 We can also take a look at the normalized vectors:
@@ -202,8 +203,8 @@ print(f'line 1: {hnormalize(line1)}')
 print(f'line 2: {hnormalize(line2)}')
 ```
 
-    line 1: [ 0.14285714 -0.57142857  1.        ]
-    line 2: [-1. -0.  1.]
+    line 1: [ 0.125 -0.625  1.   ]
+    line 2: [-0.5 -0.   1. ]
 
 
 Let's now visualize the lines to check whether the result is correct:
@@ -213,11 +214,11 @@ Let's now visualize the lines to check whether the result is correct:
 def plot_line(line_vec, xs, **kwargs):
     
     # a*x + b*y + c = 0
-    assert len(line_vec)  == 3
+    assert len(line_vec) == 3
     a, b, c = line_vec
 
     if b == 0:
-        plt.axvline(-a / c, **kwargs)
+        plt.axvline(-c / a, **kwargs)
         return
 
     slope = -a / b
@@ -230,21 +231,20 @@ def plot_line(line_vec, xs, **kwargs):
 
 
 ```python
-helpers.create_canvas(xrange, yrange)
+_, ax = plt.subplots()
+helpers.prepare_canvas(ax, xrange, yrange)
 
 plt.scatter(points[:, 0], points[:, 1], color='black')
 
 plot_line(line1, np.linspace(*xrange), linestyle='-', color='dodgerblue')
 plot_line(line2, np.linspace(*xrange), linestyle='-', color='lawngreen')
 
-plt.xlabel('x')
-plt.ylabel('y')
 plt.show()
 ```
 
 
     
-![png](/homogeneous_vectors_files/homogeneous_vectors_30_0.png)
+![png](/homogeneous-vectors/figure_2.png)
     
 
 
@@ -257,7 +257,7 @@ p = np.cross(line1, line2)
 print('Point at the intersection of the two lines:', h2e(p))
 ```
 
-    Point at the intersection of the two lines: [1. 2.]
+    Point at the intersection of the two lines: [2. 2.]
 
 
 The obtained result is as expected.
@@ -269,8 +269,3 @@ To conclude, here are some more in-depth material about homogeneous coordinates 
  - [Homogeneous Coordinates (part of the course materials on Image Processing and Computer Vision)](https://staff.fnwi.uva.nl/r.vandenboomgaard/IPCV20162017/LectureNotes/MATH/homogenous.html)
  - [Using Homography for Pose Estimation in OpenCV](https://medium.com/analytics-vidhya/using-homography-for-pose-estimation-in-opencv-a7215f260fdd)
  - [Image Geometric Transformation In Numpy and OpenCV](https://towardsdatascience.com/image-geometric-transformation-in-numpy-and-opencv-936f5cd1d315)
-
-
-```python
-
-```
