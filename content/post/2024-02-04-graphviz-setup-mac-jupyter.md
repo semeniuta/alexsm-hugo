@@ -13,7 +13,7 @@ tags: [macos, python, jupyter]
 The Graphviz software can be [installed using Brew](https://formulae.brew.sh/formula/graphviz):
 
 ```sh
-brew install graphviz
+$ brew install graphviz
 ```
 
 This gives access to [`dot` rendering program](https://graphviz.org/doc/info/command.html) in your terminal.
@@ -28,7 +28,7 @@ Furthermore, there are several Graphviz-related packages you can install from Py
 I decided to follow [this blog post](https://h1ros.github.io/posts/introduction-to-graphviz-in-jupyter-notebook/), and went along with the first option:
 
 ```sh
-pip install graphviz
+$ pip install graphviz
 ```
 
 As such, the setup comprises Graphviz's `dot` on your `$PATH` together with the `graphviz` Python library.
