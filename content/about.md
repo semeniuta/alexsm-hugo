@@ -5,11 +5,6 @@ slug: about
 menu: main
 ---
 
-Hi, I am **Oleksandr Semeniuta**, a software engineer at [Cisco Collaboration](https://www.cisco.com/) in Lysaker, Norway, contributing to R&D efforts that bring about the amazing [Cisco Webex Devices](https://www.webex.com/video-conference-equipment.html). I came to Cisco from academic/research background (NTNU, SINTEF Manufacturing), where I was applying computational solutions to manufacturing problems.  The areas I dealt with included data science for manufacturing applications, computer vision, industrial robotics (particularly the aspects of system integration, vision-based robotics, and distributed computing for robotic applications), and 3D printing (algorithmic solutions for quality assurance).
+I am **Oleksandr Semeniuta**, a software engineer and researcher. Currently at Cisco, working on [intelligent camera features of Cisco video collaboration devices](https://www.webex.com/us/en/solutions/camera-intelligence-cisco-devices.html). Earlier, contributed to research activities towards [digitalization of manufacturing in Norway](https://ncemanufacturing.no), with a focus on applying computer vision and data driven solutions to manufacturing automation. I hold a PhD degree in [Signals and Systems from Chalmers University of Technology](https://www.chalmers.se/en/departments/e2/research/systems-and-control), and enjoy crafting software requiring autonomous systems thinking, e.g. for systems with sensor-based, networked and event-driven aspects.
 
-I enjoy working with open source technologies and share useful know-how I learn while hacking around. This blog is the place for that. 
-
-You are welcome to visit the following resources with some of the work I have done:
-
- - My open source projects @ [GitHub](https://github.com/semeniuta). 
- - List of my academic publications @ [Google Scholar](https://scholar.google.com/citations?user=H4Y2HLwAAAAJ)
+In this blog I am primarily sharing practical know-how to related to programming, data science, and managing Linux/Unix systems.
