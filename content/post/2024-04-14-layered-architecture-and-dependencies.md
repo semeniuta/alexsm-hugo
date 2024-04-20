@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Layered software architecture and dependecies"
+title: "Layered software architecture and dependencies"
 comments: true
 math: true
 slug: layered-architecture-and-dependencies
