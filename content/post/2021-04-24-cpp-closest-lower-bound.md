@@ -21,9 +21,6 @@ std::optional<size_t> search_closest(const std::vector<double> & sorted_array, d
     if (sorted_array.empty())
         return std::nullopt;
 
-    if (sorted_array.size() == 1)
-        return 0;
-
     auto iter_geq = std::lower_bound(sorted_array.begin(), sorted_array.end(), x);
 
     if (iter_geq == sorted_array.begin())
