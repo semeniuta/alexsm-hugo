@@ -21,7 +21,7 @@ std::optional<size_t> search_closest(const std::vector<double> & sorted_array, d
     if (sorted_array.empty())
         return std::nullopt;
 
-    auto iter_geq = std::lower_bound(sorted_array.begin(), sorted_array.end(), x);
+    const auto iter_geq = std::lower_bound(sorted_array.begin(), sorted_array.end(), x);
 
     if (iter_geq == sorted_array.begin())
         return 0;
@@ -49,7 +49,7 @@ if (sorted_array.empty())
 Further, we are using `std::lower_bound`:
 
 ```c++
-auto iter_geq = std::lower_bound(
+const auto iter_geq = std::lower_bound(
     sorted_array.begin(), 
     sorted_array.end(), 
     x
@@ -61,9 +61,8 @@ As you may read in the [reference](https://en.cppreference.com/w/cpp/algorithm/l
 If the returned lower bound corresponds to the first element in the vector, there is no point to check for the element to the left, so we just return 0:
 
 ```cpp
-if (iter_geq == sorted_array.begin()) {
+if (iter_geq == sorted_array.begin())
     return 0;
-}
 ```
 
 If the returned lower bound is `sorted_array.end()`, there was no element that was greater or equal to `x`. In that case, we can just return the index of the last element:
@@ -88,8 +87,8 @@ return iter_geq - sorted_array.begin();
 That's all. We've got the required result. Let's see how this function works for a simple example application that you may find [here](https://github.com/semeniuta/demo_cpp/blob/master/src/demo_find_closest.cpp) (with the code for `print_vector` [here](https://github.com/semeniuta/demo_cpp/blob/master/src/helpers.h)). 
 
 ```cpp
-int main() {
-
+int main()
+{
     // Define a vector of unsorted doubles
     std::vector<double> numbers = {3.14, 4.89, 1.2, 9.4, 0.57, -1.9, 5.3, 4.65};
 
