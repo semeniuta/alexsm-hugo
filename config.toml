@@ -15,3 +15,9 @@ disqusShortname = "alexsm"
 [markup]
   [markup.highlight]
     style = 'monokai'
+
+[outputs]
+  home = ["html"]
+  section = ["html"]
+  taxonomy = ["html"]
+  term = ["html"]
