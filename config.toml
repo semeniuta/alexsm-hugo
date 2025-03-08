@@ -5,7 +5,7 @@ theme = "alexsm-theme"
 disqusShortname = "alexsm"
 
 [permalinks]
-  post = "/:slug/"
+  blog = "/:slug/"
 
 [Params]
   subtitle = "A technical blog by Oleksandr Semeniuta"
