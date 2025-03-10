@@ -4,6 +4,7 @@ title: "Install and configure pyenv on a Mac"
 comments: true
 math: true
 slug: install-and-configure-pyenv-on-mac
+summary: "More controllable management of Python versions."
 date: "2024-12-15"
 tags: [python, mac]
 ---

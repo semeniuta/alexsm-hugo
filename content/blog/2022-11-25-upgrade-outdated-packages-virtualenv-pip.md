@@ -4,6 +4,7 @@ title: "Update all outdated packages inside a virtualenv with pip"
 comments: true
 math: false
 slug: upgrade-outdated-packages-virtualenv-pip
+summary: "Shell pipeline using pip, tail, awk, tr, xargs."
 date: "2022-11-25"
 tags: [bash, python]
 ---

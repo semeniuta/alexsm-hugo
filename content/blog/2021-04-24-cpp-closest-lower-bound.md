@@ -3,6 +3,7 @@ layout: post
 title: Searching for the closest value in a sorted vector with C++
 comments: true
 slug: cpp-closest-lower-bound
+summary: "Kind of like binary search, but for a std::vector of sorted floats, using std::lower_bound."
 date: "2021-04-24"
 tags: [c++, programming]
 ---

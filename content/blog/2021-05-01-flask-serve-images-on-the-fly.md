@@ -3,6 +3,7 @@ layout: post
 title: Serve images on the fly in a binary form with Flask
 comments: true
 slug: flask-serve-images-on-the-fly
+summary: "Using Flask and OpenCV to create and serve images on the fly (with the expected Content-Type)."
 date: "2021-05-01"
 tags: [python, programming, flask, opencv, numpy]
 ---

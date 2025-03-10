@@ -3,6 +3,7 @@ layout: post
 title: std::vector and C++'s braced initialization
 comments: true
 slug: cpp-std-vector-braced-init
+summary: "When braced initialization is preferred and when it is not (when it comes to std::vector)."
 date: "2021-05-13"
 tags: [c++, programming]
 ---

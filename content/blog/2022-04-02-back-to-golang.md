@@ -3,6 +3,7 @@ layout: post
 title: "Looking again at Go: go.mod, go.sum, go.work, and VSCode config"
 comments: true
 slug: back-go-golang
+summary: "Golang workspaces, modules, and some VSCode configurations."
 date: "2022-04-02"
 tags: [golang, programming, vscode]
 ---

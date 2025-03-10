@@ -4,6 +4,7 @@ title: "Homogeneous vectors"
 comments: true
 math: true
 slug: homogeneous-vectors
+summary: "Using homogeneous vectors to represent points and lines, with NumPy-based examples."
 date: "2022-04-10"
 tags: [math, python, numpy]
 ---

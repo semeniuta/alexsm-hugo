@@ -4,6 +4,7 @@ title: "Rotations and translations with Eigen and scipy.spatial"
 comments: true
 math: true
 slug: transformations-with-eigen-and-scipy-spatial
+summary: "Homogeneus transformations (rotation + translation), comparing Eigen (C++) and SciPy (Python); example with the roll-pitch-yaw (RPY) sequence of rotations."
 date: "2023-11-12"
 tags: [math, python, c++, numpy]
 ---

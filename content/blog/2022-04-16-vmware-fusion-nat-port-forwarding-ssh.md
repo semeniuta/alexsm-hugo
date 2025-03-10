@@ -3,6 +3,7 @@ layout: post
 title: "Configure NAT port forwarding on VMWare Fusion for SSH"
 comments: true
 slug: vmware-fusion-nat-port-forwarding-ssh
+summary: "Setting up openssh-server and ufw on an Ubuntu virtual machine, and configuring NAT on VMWare Fusion."
 date: "2022-04-16"
 tags: [linux, ubuntu, ssh, networking, virtualization]
 ---

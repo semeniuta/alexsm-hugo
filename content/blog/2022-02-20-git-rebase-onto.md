@@ -3,6 +3,7 @@ layout: post
 title: "Using git rebase --onto to attach a branch to an earlier commit"
 comments: true
 slug: git-rebase-onto
+summary: "Manipulating where the current branch starts with git rebase."
 date: "2022-02-20"
 tags: [git]
 ---

@@ -3,6 +3,7 @@ layout: post
 title: Building OpenCV with Conda on Linux
 comments: true
 slug: building-opencv-with-conda
+summary: "An OLD tutorial of how to build OpenCV for using it with a Conda environment."
 date: "2017-12-29"
 tags: [opencv, cmake, conda, python, linux]
 ---

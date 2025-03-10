@@ -4,6 +4,7 @@ title: "References as C++ class members"
 comments: true
 math: true
 slug: cpp-references-as-class-members
+summary: "Arguments on why and when it is a bad idea to have references as class members, and when it can be fine."
 date: "2024-03-16"
 tags: [c++, programming]
 ---

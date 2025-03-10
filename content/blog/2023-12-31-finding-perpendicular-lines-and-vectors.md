@@ -4,6 +4,7 @@ title: "Finding perpendicular lines and vectors"
 comments: true
 math: true
 slug: finding-perpendicular-lines-and-vectors
+summary: "Examples of using linear algebra and Python/NumPy to find perpendicular lines/vectors and parallel lines at a certain distance."
 date: "2023-12-31"
 tags: [math, python, numpy]
 ---

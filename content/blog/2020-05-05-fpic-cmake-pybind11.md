@@ -3,6 +3,7 @@ layout: post
 title: Position independent code
 comments: true
 slug: fpic-cmake-pybind11
+summary: "Applying -fPIC flag when building with CMake."
 date: "2020-05-05"
 tags: [c++, programming, cmake, pybind11, python]
 ---

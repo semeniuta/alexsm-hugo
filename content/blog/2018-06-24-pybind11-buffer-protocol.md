@@ -3,6 +3,7 @@ layout: post
 title: Exposing C++ array data in Python with the Pybind11 buffer protocol
 comments: true
 slug: pybind11-buffer-protocol-opencv-to-numpy
+summary: "Integrating your C++ code with Python/NumPy code."
 date: "2018-06-24"
 tags: [c++, pybind11, python]
 ---

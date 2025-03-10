@@ -3,6 +3,7 @@ layout: post
 title: Optimization with Python
 comments: true
 slug: optimization-with-python
+summary: "Resources on doing mathematical optimization with Python (SciPy and other tools)."
 date: "2021-04-11"
 tags: [python, optimization, datascience]
 ---

@@ -4,6 +4,7 @@ title: "Layered software architecture and dependencies"
 comments: true
 math: true
 slug: layered-architecture-and-dependencies
+summary: "Communication between software layers and looser coupling through dependency injection."
 date: "2024-04-14"
 tags: [software-design, programming]
 ---

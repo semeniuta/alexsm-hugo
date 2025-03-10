@@ -4,6 +4,7 @@ title: "Spin up a MySQL database powered by Docker"
 comments: true
 math: false
 slug: launch-mysql-on-docker
+summary: "Launch a MySQL database in Docker and communicate with it using Brew-installed mysql-client."
 date: "2023-01-20"
 tags: [databases, mysql, docker]
 ---

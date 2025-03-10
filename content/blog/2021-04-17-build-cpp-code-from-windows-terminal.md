@@ -3,6 +3,7 @@ layout: post
 title: Building C++ code from command line on Windows
 comments: true
 slug: build-cpp-code-from-windows-terminal
+summary: "Some notes on using Visual Studio's cl.exe to build C++ code from a terminal on Windows."
 date: "2021-04-17"
 tags: [c++, windows, cmake]
 ---
