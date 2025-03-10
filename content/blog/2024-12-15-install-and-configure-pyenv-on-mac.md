@@ -63,7 +63,7 @@ I often like having a separate virtual environment with a lot of the important l
 ```sh
 $ cd code
 $ python -m venv main_venv
-$ main_venv/bin/activate
+$ source main_venv/bin/activate
 (main_venv) $ pip install numpy scipy pandas matplotlib ipython
 ```
 
