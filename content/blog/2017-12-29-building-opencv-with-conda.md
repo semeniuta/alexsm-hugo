@@ -7,6 +7,8 @@ date: "2017-12-29"
 tags: [opencv, cmake, conda, python, linux]
 ---
 
+**NOTE: This tutorial is old and likely not relevant today.**
+
 When it comes to building and installing OpenCV with Python support on \*nix platforms, the collection of [tutorials by Adrian Rosebrock](https://www.pyimagesearch.com/opencv-tutorials-resources-guides/) is the best. He provides detailed description of the required steps, as well as motivation for better development practices. In particular, Adrian creates a dedicated `virtualenv` environment, installs NumPy in it, and builds the whole thing having this environment activated.
 
 Such a solution worked pretty well for me, both on Linux and macOS. However, in my work I mostly use `conda` for managing my Python environments. It especially shines on Raspberry Pies, where `conda`'s pre-built binaries get installed way faster than the `pip`-installed ones.
