@@ -2,6 +2,7 @@
 title: Recommended online courses
 comments: false
 slug: online-courses
+summary: "The best MOOCs I have taken and can recommend."
 menu: side
 ---
 
