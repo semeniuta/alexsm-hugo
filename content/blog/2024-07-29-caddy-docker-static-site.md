@@ -13,12 +13,12 @@ tags: [docker]
 
 ```sh
 docker run -d --cap-add=NET_ADMIN -p 80:80 -p 443:443 -p 443:443/udp \
-    -v static_site_root_dir:/srv \
+    -v /path/to/static_site_root_dir:/srv \
     -v caddy_data:/data \
     -v caddy_config:/config \
     caddy caddy file-server --domain mydomain.com
 ```
 
-As such, you are just managing the files in `static_site_root_dir` (which is mapped to to the container's `/srv` directory), with the container's `/data` and `/srv` directories mounted as Docker volumes.
+As such, you are just managing the files in `/path/to/static_site_root_dir` (which is mapped as a bind mount to to the container's `/srv` directory), with the container's `/data` and `/srv` directories mounted as Docker volumes.
 
 The `--cap-add=NET_ADMIN` option improves performance of the UDP-based HTTP/3 protocol (enabled in Caddy by default) by increasing the buffer size for the sockets. 
