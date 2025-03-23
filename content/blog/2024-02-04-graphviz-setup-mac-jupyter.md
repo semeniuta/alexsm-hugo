@@ -4,7 +4,7 @@ title: "Graphviz setup on a Mac to be used with Python/Jupyter"
 comments: true
 math: true
 slug: graphviz-setup-mac-jupyter
-summary: "Brew-installed grapviz + pip-installed graphiz library (along with an overview of other related libraries)."
+summary: "Brew-installed grapviz + pip-installed graphiz library (along with an overview of other related libraries)"
 date: "2024-02-04"
 tags: [macos, python, jupyter]
 ---

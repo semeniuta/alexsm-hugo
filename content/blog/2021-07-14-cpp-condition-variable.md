@@ -3,7 +3,7 @@ layout: post
 title: Using a condition variable in C++
 comments: true
 slug: cpp-condition-variable
-summary: "A C++ example of using a conditional variable and a mutex."
+summary: "A C++ example of using a conditional variable and a mutex"
 date: "2021-07-14"
 tags: [c++, programming, concurrency]
 ---

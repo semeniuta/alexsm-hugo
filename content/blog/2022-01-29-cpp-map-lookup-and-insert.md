@@ -3,7 +3,7 @@ layout: post
 title: "Different methods of search and insertion into std::map"
 comments: true
 slug: cpp-map-lookup-and-insert
-summary: "Different ways of lookup and insert into C++'s map."
+summary: "Different ways of lookup and insert into C++'s map"
 date: "2022-01-29"
 tags: [c++, programming]
 ---

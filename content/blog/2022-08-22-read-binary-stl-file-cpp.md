@@ -4,7 +4,7 @@ title: "Reading a binary STL file with C++"
 comments: true
 math: true
 slug: read-binary-stl-file-cpp
-summary: "Reading triangular mesh data from a binary STL file with C++; an example of using reinterpret_cast."
+summary: "Reading triangular mesh data from a binary STL file with C++; an example of using reinterpret_cast"
 date: "2022-08-22"
 tags: [programming, c++]
 ---

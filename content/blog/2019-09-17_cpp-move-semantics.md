@@ -3,7 +3,7 @@ layout: post
 title: C++ move semantics
 comments: true
 slug: cpp-move-semantics
-summary: "Some notes on C++ move semantics and an example of copy/move construction and assignment."
+summary: "Some notes on C++ move semantics and an example of copy/move construction and assignment"
 date: "2019-09-17"
 tags: [c++, programming]
 ---

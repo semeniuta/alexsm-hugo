@@ -4,7 +4,7 @@ title: "Beta distribution"
 comments: true
 math: true
 slug: beta-distribution
-summary: 'My notes on Beta probability distribution based on the "Bayesian Statistics the Fun Way" book.'
+summary: 'My notes on Beta probability distribution based on the "Bayesian Statistics the Fun Way" book'
 date: "2023-04-09"
 tags: [datascience, math, python, numpy]
 ---

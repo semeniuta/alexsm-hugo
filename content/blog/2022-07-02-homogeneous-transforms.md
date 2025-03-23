@@ -4,7 +4,7 @@ title: "Homogeneous transformations: an example in 2D with Python"
 comments: true
 math: true
 slug: homogeneous-transforms
-summary: "2D homogeneneous transformation (rotation + translation), with NumPy-based examples and visualizations of individual transformations and chains of consecutive transformations."
+summary: "2D homogeneneous transformation (rotation + translation), with NumPy-based examples and visualizations of individual transformations and chains of consecutive transformations"
 date: "2022-07-02"
 tags: [math, python, numpy]
 ---

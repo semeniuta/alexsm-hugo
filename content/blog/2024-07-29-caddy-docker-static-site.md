@@ -4,7 +4,7 @@ title: "Run Caddy in Docker for serving a static site"
 comments: true
 math: true
 slug: caddy-docker-static-site
-summary: "Simple command for serving a static web site, with automatic generation and renewal of HTTPS certificates."
+summary: "Simple command for serving a static web site, with automatic generation and renewal of HTTPS certificates"
 date: "2024-07-29"
 tags: [docker]
 ---

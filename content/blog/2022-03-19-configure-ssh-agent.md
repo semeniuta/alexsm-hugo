@@ -3,7 +3,7 @@ layout: post
 title: "Configuring SSH agent"
 comments: true
 slug: configure-ssh-agent
-summary: "Using SSH agent across Mac and Linux, forwarding the agent in sessions."
+summary: "Using SSH agent across Mac and Linux, forwarding the agent in sessions"
 date: "2022-03-19"
 tags: [ssh, macos, linux, ubuntu]
 ---

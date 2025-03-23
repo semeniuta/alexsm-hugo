@@ -3,7 +3,7 @@ layout: post
 title: Configuring jumbo frames in Ubuntu
 comments: true
 permalink: ubuntu-jumbo-frames
-summary: "Allowing jumbo frames in Ubuntu's /etc/network/interfaces to be able to use GigE Vision cameras."
+summary: "Allowing jumbo frames in Ubuntu's /etc/network/interfaces to be able to use GigE Vision cameras"
 tags: [linux, ubuntu, networking, computervision, gigevision]
 date: "2017-10-28"
 ---

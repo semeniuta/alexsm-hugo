@@ -3,7 +3,7 @@ layout: post
 title: Automatically split and join a video using ffmpeg 
 comments: true
 slug: ffmpeg-split-and-join
-summary: "Using ffmpeg, a custom shell script and a file with timestamp markings to automate cutting away undesirable parts of a video."
+summary: "Using ffmpeg, a custom shell script and a file with timestamp markings to automate cutting away undesirable parts of a video"
 date: "2021-11-28"
 tags: [ffmpeg, bash]
 ---

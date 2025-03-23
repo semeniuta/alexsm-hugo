@@ -3,7 +3,7 @@ layout: post
 title: Cancelling bad stuff in Git
 comments: true
 slug: cancel-bad-stuff-in-git
-summary: "Some Git command to recover from when something has been messed up."
+summary: "Some Git command to recover from when something has been messed up"
 date: "2019-06-23"
 tags: [git, programming]
 ---

@@ -3,7 +3,7 @@ layout: post
 title: Applying a command to each line in a file with xargs -L1
 comments: true
 slug: xargs-apply-to-each-line
-summary: "An xargs example for doing an operation for each line printed by cat."
+summary: "An xargs example for doing an operation for each line printed by cat"
 date: "2021-04-05"
 tags: [bash, git]
 ---

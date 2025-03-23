@@ -4,7 +4,7 @@ title: "Some example of std::ranges and std::views usage in C++20"
 comments: true
 math: true
 slug: cpp-ranges-views-examples
-summary: "Useful examples with ranges and views, allowing for more functional style of C++ code."
+summary: "Useful examples with ranges and views, allowing for more functional style of C++ code"
 date: "2023-07-09"
 tags: [c++, programming]
 ---

@@ -3,7 +3,7 @@ layout: post
 title: My favorite IPython Magic commands
 comments: true
 slug: jupyter-notebook-ipython-magic
-summary: "matplotlib inline/notebook; autoreload; javascript/should_scroll, timeit."
+summary: "matplotlib inline/notebook; autoreload; javascript/should_scroll, timeit"
 date: "2018-06-25"
 tags: [python, jupyter, datascience]
 ---

@@ -2,7 +2,7 @@
 title: Useful blog posts
 comments: false
 slug: useful-blog-posts
-summary: "Blog posts with useful technical guides."
+summary: "Blog posts with useful technical guides"
 menu: side
 ---
 
