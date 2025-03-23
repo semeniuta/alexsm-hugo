@@ -1,17 +1,23 @@
 baseURL = "http://alexsm.com/"
 languageCode = "en-us"
-title = "Oleksandr Semeniuta"
+title = "alexsm@home"
 theme = "alexsm-theme"
 disqusShortname = "alexsm"
 
 [permalinks]
-  post = "/:slug/"
+  blog = "/:slug/"
 
 [Params]
-  subtitle = "A technical blog"
+  subtitle = "A technical blog by Oleksandr Semeniuta"
   copyright = "Oleksandr Semeniuta"
   description = "Technical blog by Oleksandr Semeniuta: C++, Python, Linux, macOS, programming, automation with shell scripts"
 
 [markup]
   [markup.highlight]
     style = 'monokai'
+
+[outputs]
+  home = ["html"]
+  section = ["html"]
+  taxonomy = ["html"]
+  term = ["html"]
