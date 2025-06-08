@@ -5,7 +5,7 @@ comments: true
 math: true
 slug: opencv-warping
 summary: "Two examples of performing perspective transformations with OpenCV using getPerspectiveTransform and warpPerspective"
-date: "2025-05-31"
+date: "2025-06-08"
 tags: [opencv, computervision, numpy, python]
 ---
 In this blog post, I am going to show two examples of using OpenCV's functionality for **prespective warping** (`cv2.getPerspectiveTransform` and `cv2.warpPerspective`). We will apply perspective transformation to an image to (1) simulate a [keystone effect](https://en.wikipedia.org/wiki/Keystone_effect), i.e. a camera looking at an object from an angle, and (2) to simulate rotation of an object around its center (which will requre some additional rigid transformations). 
