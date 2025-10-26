@@ -244,104 +244,17 @@ The first connected component represents the background, while the rest, in our 
 
 
 ```python
-ccomp_stats
+pd.options.display.float_format = '{:.3f}'.format
+print(ccomp_stats)
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>LeftX</th>
-      <th>TopY</th>
-      <th>Width</th>
-      <th>Height</th>
-      <th>Area</th>
-      <th>CenterX</th>
-      <th>CenterY</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>0</td>
-      <td>0</td>
-      <td>1280</td>
-      <td>945</td>
-      <td>1010446</td>
-      <td>646.502673</td>
-      <td>466.151459</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>591</td>
-      <td>184</td>
-      <td>218</td>
-      <td>206</td>
-      <td>36198</td>
-      <td>698.482651</td>
-      <td>287.159070</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>159</td>
-      <td>209</td>
-      <td>230</td>
-      <td>223</td>
-      <td>41703</td>
-      <td>272.268230</td>
-      <td>318.972016</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>933</td>
-      <td>484</td>
-      <td>229</td>
-      <td>212</td>
-      <td>39383</td>
-      <td>1047.201965</td>
-      <td>589.960262</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>218</td>
-      <td>506</td>
-      <td>237</td>
-      <td>225</td>
-      <td>42742</td>
-      <td>333.928408</td>
-      <td>617.393150</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>610</td>
-      <td>569</td>
-      <td>221</td>
-      <td>219</td>
-      <td>39128</td>
-      <td>718.931711</td>
-      <td>679.580505</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
+       LeftX  TopY  Width  Height     Area  CenterX  CenterY
+    0      0     0   1280     945  1010446  646.503  466.151
+    1    591   184    218     206    36198  698.483  287.159
+    2    159   209    230     223    41703  272.268  318.972
+    3    933   484    229     212    39383 1047.202  589.960
+    4    218   506    237     225    42742  333.928  617.393
+    5    610   569    221     219    39128  718.932  679.581
 
 
 Some related resources:
